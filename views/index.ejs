@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Thrones Characters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GoT Ultimate Guide</h1>
+    </header>
+    <nav>
+      <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Search for a character" required>
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+
+    <div class="character-display">
+      <img src="<%= character.imageUrl %>" alt="Character Image">
+      <div class="character-info">
+        <h1><%= character.firstName %> <%= character.lastName %></h1>
+        <p><strong>ID:</strong> <%= character.id %></p>
+        <p><strong>Born:</strong> <%= character.born ? character.born : 'Unknown' %></p>
+        <p><strong>Dead:</strong> <%= character.died ? character.died : 'Alive' %></p>
+        <p><strong>Title(s):</strong> <%= character.title %></p>
+        <p><strong>Aliases:</strong> <%= character.aliases ? character.aliases.join(', ') : 'None' %></p>
+        <p><strong>Family:</strong> <%= family %></p>
+        <% if (familyCrest) { %>
+          <p><strong>Family Crest:</strong> <img src="<%= familyCrest %>" alt="Family Crest"></p>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="navigation-buttons">
+      <a href="/prev">Previous</a>
+      <a href="/next">Next</a>
+    </div>
+</body>
+</html>

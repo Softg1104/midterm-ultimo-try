@@ -1,0 +1,96 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #04474B;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  background-color: #D3B9B9;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav form {
+  display: inline-block;
+}
+
+nav input[type="text"] {
+  padding: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    border: 1px solid #141212;
+    border-radius: 50px;
+    outline: none;
+}
+
+nav button {
+  padding: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.character-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.character-display img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.character-info {
+  flex-grow: 1;
+  text-align: right;
+  max-width: 60%;
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.navigation-buttons a:hover {
+  background-color: #555;
+}
+.character-info h1 {
+  position: absolute;
+    width: 100%; 
+    text-align: center; 
+    top: 300px; 
+    left: 0; 
+    margin: 0;
+}
